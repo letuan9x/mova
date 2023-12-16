@@ -42,7 +42,7 @@ class Onboarding extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.fromLTRB(16, 18, 16, 18),
                   child: ElevatedButton(
                     onPressed: onTapGetStarted,
                     style: ElevatedButton.styleFrom(
