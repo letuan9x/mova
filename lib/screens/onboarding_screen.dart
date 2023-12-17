@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:mova/screens/option_login_screen.dart';
 
 import '../app/app_colors.dart';
 
@@ -67,5 +69,7 @@ class Onboarding extends StatelessWidget {
     );
   }
 
-  void onTapGetStarted() {}
+  void onTapGetStarted() {
+    Get.to(const OptionLogin());
+  }
 }

@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:get/get.dart';
 import 'package:mova/app/app_colors.dart';
+import 'package:get/get.dart';
+import 'package:mova/screens/onboarding_screen.dart';
 
 class Splash extends StatelessWidget {
   const Splash({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    Future.delayed(const Duration(seconds: 2), () {
+      Get.off(const Onboarding());
+    });
+    return GetMaterialApp(
       home: Scaffold(
         backgroundColor: AppColor.primary,
         body: SafeArea(
