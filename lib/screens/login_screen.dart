@@ -24,31 +24,44 @@ class Login extends StatelessWidget {
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(24, 0, 24, 0),
-                child: Column(
-                  children: [
-                    Image.asset('assets/images/logo.png', width: 120, height: 120),
-                    const SizedBox(height: 24),
-                    const Text('Create Your Account',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'Urbanist',
-                            fontSize: 30,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w700)),
-                    const SizedBox(height: 24),
-                    Column(children: [
-                      const InputTexField(typeInputTextField: TypeInputTextField.email),
-                      const SizedBox(height: 20),
-                      InputTexField(
-                          typeInputTextField: TypeInputTextField.password,
-                          onPressed: () {})
-                    ]),
-                  ],
-                ),
-              )
+              Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
+                    child: Column(
+                      children: [
+                        Flexible(
+                          flex: 1,
+                          child: Column(
+                            children: [
+                              Flexible(
+                                  flex: 3,
+                                  child: Image.asset('assets/images/logo.png')),
+                              const Flexible(
+                                flex: 1,
+                                child: Text(
+                                  'Create Your Account',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Urbanist',
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.w700
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: Container(color: Colors.blue),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: Container(color: Colors.green),
+                        )
+                      ],
+                    ),
+                  ))
             ],
           ),
         ),

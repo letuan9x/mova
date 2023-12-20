@@ -89,7 +89,7 @@ class OptionLogin extends StatelessWidget {
                             flex: 1,
                             child: Column(
                               children: [
-                                const Spacer(flex: 1),
+                                // const Spacer(flex: 1),
                                 Flexible(
                                   flex: 3,
                                   child: Row(
