@@ -26,42 +26,65 @@ class Login extends StatelessWidget {
               ),
               Expanded(
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
-                    child: Column(
-                      children: [
-                        Flexible(
-                          flex: 1,
-                          child: Column(
-                            children: [
-                              Flexible(
-                                  flex: 3,
-                                  child: Image.asset('assets/images/logo.png')),
-                              const Flexible(
-                                flex: 1,
-                                child: Text(
-                                  'Create Your Account',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'Urbanist',
-                                    fontSize: 32,
-                                    fontWeight: FontWeight.w700
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(color: Colors.blue),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Container(color: Colors.green),
-                        )
-                      ],
+                padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
+                child: Column(
+                  children: [
+                    Flexible(
+                      flex: 1,
+                      child: Column(
+                        children: [
+                          Flexible(
+                              flex: 3,
+                              child: Image.asset('assets/images/logo.png')),
+                          const Flexible(
+                            flex: 1,
+                            child: Text(
+                              'Create Your Account',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Urbanist',
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  ))
+                    Flexible(
+                      flex: 1,
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Flexible(
+                              flex: 2,
+                              child: InputTexField(
+                                onPressed: () {},
+                                image: 'assets/images/ic_email.png',
+                              ),
+                            ),
+                            Flexible(
+                              flex: 2,
+                              child: InputTexField(
+                                onPressed: () {},
+                                image: 'assets/images/ic_email.png',
+                              ),
+                            ),
+                            Flexible(
+                              flex: 1,
+                              child: Container(color: Colors.pink),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Flexible(
+                      flex: 2,
+                      child: Container(color: Colors.green),
+                    )
+                  ],
+                ),
+              ))
             ],
           ),
         ),
