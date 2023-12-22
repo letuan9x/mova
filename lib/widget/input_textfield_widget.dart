@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mova/app/app_colors.dart';
 
 enum TypeInputTextField { email, password }
 
@@ -12,7 +13,10 @@ class InputTexField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      decoration: BoxDecoration(
+        color: AppColor.dark2,
+        borderRadius: BorderRadius.circular(12)
+      ),
       child: Row(
         children: [
           Padding(

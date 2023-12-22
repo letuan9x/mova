@@ -46,7 +46,7 @@ class OptionLogin extends StatelessWidget {
                                   color: Colors.red,
                                 )),
                           ),
-                          SizedBox(height: 8)
+                          const SizedBox(height: 8)
                         ],
                       ),
                     ),
@@ -125,7 +125,7 @@ class OptionLogin extends StatelessWidget {
                                   flex: 4,
                                   child: PrimaryButton(
                                       onPressed: () {
-                                        Get.to(const Login());
+                                        Get.to(const LoginScreen());
                                       },
                                       title: 'Sign in with password'),
                                 ),
