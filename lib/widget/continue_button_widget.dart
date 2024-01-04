@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mova/app/app_colors.dart';
+import 'package:mova/app/theme.dart';
 
 class ContinueButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -17,7 +17,7 @@ class ContinueButton extends StatelessWidget {
     return ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-            backgroundColor: AppColor.dark2,
+            backgroundColor: kColorDark2,
             minimumSize: const Size(0, 60),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16))),

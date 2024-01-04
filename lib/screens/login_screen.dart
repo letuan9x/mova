@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mova/app/app_colors.dart';
+import 'package:mova/app/theme.dart';
 import 'package:mova/widget/primary_button_widget.dart';
 
 import '../widget/input_textfield_widget.dart';
@@ -20,12 +20,12 @@ class _LoginScreenState extends State<LoginScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: AppColor.primary,
+        backgroundColor: kColorPrimary,
         body: SafeArea(
           child: Column(
             children: [
               AppBar(
-                backgroundColor: AppColor.primary,
+                backgroundColor: kColorPrimary,
                 leading: IconButton(
                   icon: const Icon(Icons.arrow_back, color: Colors.white),
                   onPressed: () {
@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding: const EdgeInsets.fromLTRB(24, 0, 24, 0),
                 child: Column(
                   children: [
-                    const Spacer(flex: 2),
+                    // const Spacer(flex: 1),
                     Flexible(
                         flex: 6,
                         child: Image.asset('assets/images/logo.png',
@@ -78,11 +78,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         children: [
                           Checkbox(
                               side: const BorderSide(
-                                color: AppColor.linear,
+                                color: kColorLinear,
                                 width: 2,
                               ),
                               fillColor: isRememberMe
-                                  ? MaterialStateProperty.all(AppColor.linear)
+                                  ? MaterialStateProperty.all(kColorLinear)
                                   : MaterialStateProperty.all(
                                       Colors.transparent),
                               value: isRememberMe,
@@ -143,10 +143,10 @@ class _LoginScreenState extends State<LoginScreen> {
                               flex: 4,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    color: AppColor.dark2,
+                                    color: kColorDark2,
                                     borderRadius: BorderRadius.circular(16),
                                     border: Border.all(
-                                        color: AppColor.dark3, width: 1)),
+                                        color: kColorDark3, width: 1)),
                                 child: Center(
                                   child: SizedBox(
                                       width: 24,
@@ -161,10 +161,10 @@ class _LoginScreenState extends State<LoginScreen> {
                               flex: 4,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    color: AppColor.dark2,
+                                    color: kColorDark2,
                                     borderRadius: BorderRadius.circular(16),
                                     border: Border.all(
-                                        color: AppColor.dark3, width: 1)),
+                                        color: kColorDark3, width: 1)),
                                 child: Center(
                                   child: SizedBox(
                                       width: 24,
@@ -179,10 +179,10 @@ class _LoginScreenState extends State<LoginScreen> {
                               flex: 4,
                               child: Container(
                                 decoration: BoxDecoration(
-                                    color: AppColor.dark2,
+                                    color: kColorDark2,
                                     borderRadius: BorderRadius.circular(16),
                                     border: Border.all(
-                                        color: AppColor.dark3, width: 1)),
+                                        color: kColorDark3, width: 1)),
                                 child: Center(
                                   child: SizedBox(
                                       width: 24,
@@ -213,7 +213,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 },
                                 child: const Text('Sign in',
                                     style: TextStyle(
-                                        color: AppColor.linear,
+                                        color: kColorLinear,
                                         fontFamily: 'Urbanist',
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600)))

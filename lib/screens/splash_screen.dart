@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:mova/app/app_colors.dart';
+import 'package:mova/app/theme.dart';
 import 'package:get/get.dart';
 import 'package:mova/screens/onboarding_screen.dart';
 
@@ -15,7 +15,7 @@ class Splash extends StatelessWidget {
     });
     return GetMaterialApp(
       home: Scaffold(
-        backgroundColor: AppColor.primary,
+        backgroundColor: kColorPrimary,
         body: SafeArea(
             child: Stack(
           children: [
@@ -33,7 +33,7 @@ class Splash extends StatelessWidget {
                 height: 60,
                 margin: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                 child: const SpinKitFadingCircle(
-                  color: AppColor.linear,
+                  color: kColorLinear,
                   size: 60,
                 ),
               ),

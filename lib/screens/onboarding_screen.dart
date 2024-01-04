@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mova/screens/option_login_screen.dart';
 
-import '../app/app_colors.dart';
+import '../app/theme.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -48,7 +48,7 @@ class Onboarding extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: onTapGetStarted,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColor.linear,
+                      backgroundColor: kColorLinear,
                     ),
                     child: const Text(
                       'Get Started',

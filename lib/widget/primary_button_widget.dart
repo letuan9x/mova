@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mova/app/app_colors.dart';
+import 'package:mova/app/theme.dart';
 
 class PrimaryButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -13,10 +13,10 @@ class PrimaryButton extends StatelessWidget {
     return ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-            backgroundColor: AppColor.linear,
+            backgroundColor: kColorLinear,
             minimumSize: Size(MediaQuery.of(context).size.width, 60),
             elevation: 8,
-            shadowColor: AppColor.linear),
+            shadowColor: kColorLinear),
         child: Text(
           title,
           style: const TextStyle(

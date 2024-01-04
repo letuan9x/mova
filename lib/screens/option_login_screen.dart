@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mova/app/app_colors.dart';
+import 'package:mova/app/theme.dart';
 
 import '../widget/continue_button_widget.dart';
 import '../widget/primary_button_widget.dart';
@@ -14,12 +14,12 @@ class OptionLogin extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: AppColor.primary,
+        backgroundColor: kColorPrimary,
         body: SafeArea(
           child: Column(
             children: [
               AppBar(
-                  backgroundColor: AppColor.primary,
+                  backgroundColor: kColorPrimary,
                   leading: IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.arrow_back, color: Colors.white),
@@ -96,7 +96,7 @@ class OptionLogin extends StatelessWidget {
                                     children: [
                                       Expanded(
                                         child: Container(
-                                          color: AppColor.dark3,
+                                          color: kColorDark3,
                                           height: 1,
                                         ),
                                       ),
@@ -112,7 +112,7 @@ class OptionLogin extends StatelessWidget {
                                       const SizedBox(width: 10),
                                       Expanded(
                                         child: Container(
-                                          color: AppColor.dark3,
+                                          color: kColorDark3,
                                           height: 1,
                                         ),
                                       )
@@ -148,7 +148,7 @@ class OptionLogin extends StatelessWidget {
                                           child: const Text(
                                             'Sign up',
                                             style: TextStyle(
-                                                color: AppColor.linear,
+                                                color: kColorLinear,
                                                 fontFamily: 'Urbanist',
                                                 fontSize: 14,
                                                 fontStyle: FontStyle.normal,
